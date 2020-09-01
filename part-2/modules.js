@@ -3,7 +3,7 @@
 // pointing to str1 and str2 respectively.
 // In addition, module has a function 'myfunc' that
 // return concatenation of first and second.
-createModule = function(str1, str2) {
+const createModule = function(str1, str2) {
   return (function() {
       return {
           first: str1,

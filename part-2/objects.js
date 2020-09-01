@@ -16,9 +16,7 @@ const alterObjects = function(constructor, greeting) {
 // the following format
 // [ 'foo: bar', 'baz: bim' ]
 const iterate = function(obj) {
-  const output = [];
-  Object.getOwnPropertyNames(obj).forEach((key) => {
-      output.push(`${key}: ${obj[key]}`);
+  return Object.getOwnPropertyNames(obj).map((key) => {
+    return `${key}: ${obj[key]}`
   });
-  return output;
 }
